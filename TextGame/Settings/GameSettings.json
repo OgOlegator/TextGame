@@ -1,0 +1,72 @@
+{
+  "Locations": [
+    {
+      "Name": "Кухня",
+      "NextLocations": [
+        "Коридор"
+      ]
+    },
+    {
+      "Name": "Коридор",
+      "NextLocations": [
+        "Кухня",
+        "Комната",
+        "Улица"
+      ]
+    },
+    {
+      "Name": "Комната",
+      "NextLocations": [
+        "Коридор"
+      ],
+      "Items": [
+        {
+          "Name": "Ключи",
+          "AdditionalDesc": "На столе"
+        },
+        {
+          "Name": "Конспекты",
+          "AdditionalDesc": "На столе"
+        },
+        {
+          "Name": "Рюкзак",
+          "AdditionalDesc": "На столе"
+        }
+      ]
+    },
+    {
+      "Name": "Улица",
+      "NextLocations": [
+        "Коридор"
+      ]
+    }
+  ],
+
+  "Actions": [
+    {
+      "Name": "Осмотреться",
+      "ClassHandler": "TextGame.Gameplay.Actions.Handlers.LookAroundHandler"
+    },
+    {
+      "Name": "Идти",
+      "ClassHandler": "TextGame.Gameplay.Actions.Handlers.GoHandler"
+    },
+    {
+      "Name": "Взять",
+      "ClassHandler": "TextGame.Gameplay.Actions.Handlers.TakeHandler"
+    }
+  ],
+
+  "Items": [
+    {
+      "Name": "Ключи"
+    },
+    {
+      "Name": "Конспекты"
+    },
+    {
+      "Name": "Рюкзак"
+    }
+  ]
+
+}
